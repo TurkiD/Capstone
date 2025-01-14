@@ -1,6 +1,3 @@
-var express = require('express');
-var router = express.Router();
-
 const posts = [
     {
         postTitle: "Book Worm",
@@ -10,9 +7,5 @@ const posts = [
         published: true
     },
 ];
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { posts: posts });
-});
 
-module.exports = router;
+export default posts;
