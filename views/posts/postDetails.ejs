@@ -1,3 +1,10 @@
 <%- include("../partials/header.ejs") %>
-<h1 class="text-white"><%- post.postTitle %></h1>
+<article class="mt-20 text-white body-font md:container md:mx-auto">
+    <div class="">
+        <h1 class="text-left text-6xl"><%- post.title %></h1>
+    </div>
+    <div class="pt-4">
+        <p class="text-left"><%- post.body %></p>
+    </div>
+</article>
 <%- include("../partials/footer.ejs") %>

@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var posts = require('../public/javascripts/data.js');
+var posts = require('../public/javascripts/placeholder-data');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { posts: posts });
+  res.render('articles', { posts: posts });
 });
 
 module.exports = router;
